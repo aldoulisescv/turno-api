@@ -27,7 +27,7 @@ COPY ./ /var/www/html
 RUN docker-php-ext-install pdo pdo_mysql
 
 # Ejecuta composer install para instalar dependencias
-RUN composer install --no-scripts
+RUN composer install
 
 # Ejecuta composer update para actualizar dependencias
 RUN composer update
